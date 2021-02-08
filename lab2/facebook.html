@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook — домашняя страница официального сайта</title>
+        <style>
+            body {
+                background: rgb(235, 235, 238);
+                font-family: sans-serif;
+                
+            }
+            #add-info {
+                background-color: white;
+                margin-top: 180px;
+                height: 100px;
+                margin: 190px -10px -10px -10px;
+                padding-left: 15px;
+            }
+            #register {
+                background-color: white;
+                margin-left: 950px;
+                margin-right: 250px;
+                height: 270px;
+                padding: 10px 10px;
+                margin-top: 120px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            }
+            .reg-pole{
+                height: 38px;
+                width: 284px;
+                padding-left: 10px;
+                border-radius: 10px;
+            }
+            #dop-infa {
+                margin-left: 930px;
+                margin-right: 230px;
+                font-size: small;
+                text-align: center;
+            }
+            #login-button {
+                height: 38px;
+                width: 300px;
+                background-color: rgb(35, 63, 221);
+                color: white;
+                font-weight: bold;
+            }
+            .box-of-login {
+                padding-bottom: 8px;
+            }
+            #forget-password {
+                text-align : center;
+                padding-top: 15px; 
+                padding-bottom: 20px;
+                font-size: small;
+            }
+            #create-account {
+                padding-top: 20px;
+                padding-left: 86px;
+                border-top: 2px solid rgb(236, 233, 233);
+            }
+            #create-button {
+                width: 130px;
+                height: 38px;
+                background-color: rgb(33, 153, 29);
+                color: white;
+                font-weight: bold;
+            }
+            #fb-info {
+                float: left;
+                margin-left: 250px;
+                margin-top: 60px;
+            }
+            .border{
+                border-radius: 5px;
+                border: 1.5px solid rgb(236, 233, 233);
+            }
+            input text:focus{
+                border: 1.5px solid red;
+            }
+            h1 {
+                font-family: "HelveticaNowDisplay ExtraBold", sans-serif;
+                color: rgb(35, 63, 221);
+                
+            }
+            h2 {
+                font-weight: lighter;
+            }
+            .lang{
+                text-decoration: none;
+                color: rgb(190, 187, 187);
+                font-family: sans-serif;
+            }
+            .lang:hover {
+                color: rgba(0, 0, 0);
+            }
+            #sozdat-str {
+                text-decoration: none;
+            }
+            #sozdat-str:hover {
+                color: rgb(35, 63, 221);
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "main-info">
+            <div id = "fb-info">
+                <h1><strong>Facebook</strong></h1>
+                <h2>Facebook помогает вам всегда<div>оставаться на связи и общаться со</div><div>своими знакомыми.</div></h2>
+            </div>
+        <div id="register" class="border">
+            <div class="box-of-login"><input class="reg-pole border" type = "text" placeholder = "Электронный адрес или номер телефона" required ></div>
+            <div class="box-of-login"><input class="reg-pole border" type = "password" placeholder = "Пароль" required></div>
+            <a href="vhod.html" target="_blank"><button id = "login-button" class="border">Вход</button></a>
+            <div id = "forget-password"><a href="zabyliparol.html" target="_blank">Забыли пароль?</a></div>
+
+            <div id = "create-account">
+                <a href="vhod.html" target="_blank"><button id = "create-button" class="border">Создать аккаунт</button></a>
+            </div>
+        </div>
+
+        <div id="dop-infa"><p><a id="sozdat-str" href="vhod.html" target="_blank"><strong>Создать страницу</strong></a> знаменитости, музыкальной группы или компании.</p></div>
+        </div>
+
+        
+        <div id = "add-info">
+            <p><a class="lang" href="https://ru-ru.facebook.com/" target="_blank">Русский</a> <a class="lang" href="https://en-gb.facebook.com/" target="_blank">English</a> <a class="lang" href="https://tr-tr.facebook.com/" target="_blank">Türkçe</a>
+                <a class="lang" href="https://id-id.facebook.com/" target="_blank">Bahasa Indonesia</a> <a class="lang" href="https://kk-kz.facebook.com/" target="_blank">Қазақша</a>
+                <a class="lang" href="https://zh-cn.facebook.com/" target="_blank">中文(简体)</a> <a class="lang" href="https://de-de.facebook.com/" target="_blank">Deutsch</a>
+                <a class="lang" href="https://ko-kr.facebook.com/" target="_blank">한국어</a> <a class="lang" href="https://sq-al.facebook.com/" target="_blank">Shqip</a>
+                <a class="lang" href="https://es-la.facebook.com/" target="_blank">Español</a> <a class="lang" href="https://pt-br.facebook.com/" target="_blank">Português (Brasil)</a> 
+                <a href="vhod.html" target="_blank"><button>+</button></a></p>
+            
+        </div>
+    </body>
+</html>
