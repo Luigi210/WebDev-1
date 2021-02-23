@@ -1,0 +1,15 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <img src="{{product.image}}" alt="prod img" width="200px">
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+
+  <a href="{{product.amazon}}" target="_blank">
+    {{ product.name }} in Amazon
+  </a>
+
+  <button (click)="addToCart(product)">Buy</button>
+
+</div>
