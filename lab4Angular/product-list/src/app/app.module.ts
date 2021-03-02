@@ -10,6 +10,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import {RouterModule} from "@angular/router";
 import { CartComponent } from './cart/cart.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppCategoryComponent } from './app-category/app-category.component';
+import { LikeComponent } from './product-list/like/like.component';
 
 
 
@@ -21,14 +23,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProductDetailsComponent,
     CartComponent,
     TopBarComponent,
+    AppCategoryComponent,
+    LikeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
+      { path: '', component: AppCategoryComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent},
+      { path: 'cart', component: CartComponent},
+      { path: 'category/:productId', component: ProductListComponent},
     ]),
     NgbModule, BrowserModule
   ],

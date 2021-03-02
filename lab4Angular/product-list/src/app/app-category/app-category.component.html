@@ -1,0 +1,13 @@
+<div class="cont">
+<h2>Choose Category</h2>
+
+<div class = "categories" *ngFor="let category of categories">
+  <h3>
+    <a [title]="category.name" [routerLink]="['/category', category.id]">
+    {{category.name}}</a>
+  </h3>
+
+
+
+</div>
+</div>
