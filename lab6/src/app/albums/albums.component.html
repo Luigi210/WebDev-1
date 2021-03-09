@@ -1,0 +1,9 @@
+<ol class = "albums" *ngIf="loaded">
+  <li *ngFor="let album of albums">
+    <a class = "album-links" [routerLink]="['/albums', album.id]">{{album.title}}</a>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ol>
+<div *ngIf="!loaded">
+  <p>Loading...</p>
+</div>

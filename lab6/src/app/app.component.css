@@ -1,0 +1,13 @@
+.container1{
+  font-family: sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.container2{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+a{
+  margin-right: 15px;
+}
