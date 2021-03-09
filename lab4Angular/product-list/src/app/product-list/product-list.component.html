@@ -1,0 +1,46 @@
+<div class = "container" *ngIf="category">
+<!--  <h2>Products</h2>-->
+
+
+  <div class = "products" *ngFor="let product of products">
+
+    <div class = "prod-container" *ngIf="category.id === product.category_id">
+
+      <h3>
+        <a [title]="product.name" [routerLink]="['/products', product.id]">
+          {{ product.name }}
+        </a>
+      </h3>
+
+      <img src="{{ product.image }}" width = "200px">
+      <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+
+      <div class="rate" style="color: orange; margin-bottom: 20px; font-size: 18px">
+        <ngb-rating [max]="5" [(rate)]="product.currentRate" [readonly]="true"></ngb-rating>
+      </div>
+
+      <p>Likes: {{product.likes}}</p>
+
+      <button (click) = "likeProduct(product.id)" style="background-color: mediumseagreen; margin-right: 10px">Like</button>
+
+
+      <a href="{{product.telegram}}" target="_blank">
+        <button >
+          Share
+        </button>
+      </a>
+
+      <button (click) = "remove(product.id)" style="background-color: indianred; margin-top: 10px">Remove</button>
+
+      <hr>
+    <!--      <app-product-alerts-->
+    <!--        [product]="product"-->
+    <!--        (notify)="onNotify()">-->
+    <!--      </app-product-alerts>-->
+
+      </div>
+
+</div>
+</div>
