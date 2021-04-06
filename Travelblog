@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+            h2 {
+                color: red;
+            }
+            
+            #top-places{
+                background-color: rgb(237, 218, 237);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Travel to Almaty!</h1>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/TV-Turm_Almaty_-_3.jpg/290px-TV-Turm_Almaty_-_3.jpg" alt = "almaty">
+        <h2>Almaty is one of the biggest cities of Kazakhstan</h2>
+        <p>Where you can go?</p>
+        <ul>
+            <li>Mountains
+            <li>Arbat
+            <li>Theatres
+        </ul>
+        
+        <p>Almaty is the most beautiful city with beautiful people!</p>
+        <div id = "top-places"><p>My TOP 3 cafe:</p>
+        <ol>
+            <li>Bahandi</li>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Big_Mac_hamburger.jpg/200px-Big_Mac_hamburger.jpg">
+            <li>Tagam</li>
+            <img src = "https://www.kasandbox.org/programming-images/avatars/aqualine-seed.png">
+            <li>Guanzhou</li>
+            <img src = "https://www.kasandbox.org/programming-images/avatars/aqualine-seedling.png">
+        </ol>
+        </div>
+    </body>
+</html>
